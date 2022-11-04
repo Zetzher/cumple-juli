@@ -86,7 +86,7 @@ const App = () => {
         if (type === "picture") {
           return joanFoto;
         } else if (type === "text") {
-          return "Falta texto";
+          return "Ni todas las cervezas del mundo saben mejor que pasar una noche a tu lado";
         } else {
           return joanPx;
         }

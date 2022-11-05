@@ -2,6 +2,7 @@ import armandoPx from "./assets/armandoDef.gif";
 import cristobalPx from "./assets/cristobalDef.gif";
 import julianPx from "./assets/julianDef.gif";
 import alejandroPx from "./assets/alejandroDef.gif";
+import alvaroPx from "./assets/alvaroDef.gif";
 import joanPx from "./assets/joanDef.gif";
 import javiPx from "./assets/javiDef.gif";
 import armandoFoto from "./assets/foto-armando.png";
@@ -10,6 +11,7 @@ import javiFoto from "./assets/foto-javi.png";
 import alejandroFoto from "./assets/foto-alejandro.png";
 import julianFoto from "./assets/foto-julian.png";
 import joanFoto from "./assets/foto-joan.png";
+import alvaroFoto from "./assets/foto-alvaro.png";
 import "./App.css";
 
 const App = () => {
@@ -20,41 +22,8 @@ const App = () => {
     { name: "Joan" },
     { name: "Cristobal" },
     { name: "Julian" },
+    { name: "Alvaro" },
   ];
-
-  const dynamicPhoto = ({ key }) => {
-    switch (key) {
-      case 0:
-        return armandoFoto;
-      case 1:
-        return javiFoto;
-      case 2:
-        return cristobalFoto;
-      case 3:
-        return joanFoto;
-      case 4:
-        return alejandroFoto;
-      case 5:
-        return julianFoto;
-    }
-  };
-
-  const dynamicPx = ({ key }) => {
-    switch (key) {
-      case 0:
-        return armandoPx;
-      case 1:
-        return javiPx;
-      case 2:
-        return cristobalPx;
-      case 3:
-        return joanPx;
-      case 4:
-        return alejandroPx;
-      case 5:
-        return julianPx;
-    }
-  };
 
   const dymanicResult = ({ type, key }) => {
     switch (key) {
@@ -106,6 +75,16 @@ const App = () => {
         } else {
           return julianPx;
         }
+        case 6:
+        if (type === "picture") {
+          return alvaroFoto;
+        } else if (type === "text") {
+          return "Juliana, aunque te hagas anciana recuerda que eres y siempre serás un PUTON";
+        } else {
+          return alvaroPx;
+        }
+        default:
+          break;
     }
   };
 
@@ -116,12 +95,13 @@ const App = () => {
           <div className="container">
             <div className="card">
               <div className="image">
-                <img src={dynamicPhoto({ key })} />
+                <img alt={`picture_type_${key}`} src={dymanicResult({ type: "picture", key })} />
               </div>
               <div className="content">
                 <h3>{dymanicResult({ type: "text", key })}</h3>
                 <img
-                  src={dynamicPx({ key })}
+                alt={`pixel_type_${key}`}
+                  src={dymanicResult({ type: "pixel", key })}
                   style={{ width: 50, marginLeft: 10 }}
                 />
                 <p></p>

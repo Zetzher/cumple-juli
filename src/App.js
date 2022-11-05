@@ -1,17 +1,17 @@
-import armandoPx from "./assets/armandoDef.gif";
-import cristobalPx from "./assets/cristobalDef.gif";
-import julianPx from "./assets/julianDef.gif";
-import alejandroPx from "./assets/alejandroDef.gif";
-import alvaroPx from "./assets/alvaroDef.gif";
-import joanPx from "./assets/joanDef.gif";
-import javiPx from "./assets/javiDef.gif";
-import armandoFoto from "./assets/foto-armando.png";
-import cristobalFoto from "./assets/foto-cristobal.png";
-import javiFoto from "./assets/foto-javi.png";
-import alejandroFoto from "./assets/foto-alejandro.png";
-import julianFoto from "./assets/foto-julian.png";
-import joanFoto from "./assets/foto-joan.png";
-import alvaroFoto from "./assets/foto-alvaro.png";
+import armandoPx from "./assets/armando/armandoDef.gif";
+import cristobalPx from "./assets/cristobal/cristobalDef.gif";
+import julianPx from "./assets/julian/julianDef.gif";
+import alejandroPx from "./assets/alejandro/alejandroDef.gif";
+import alvaroPx from "./assets/alvaro/alvaroDef.gif";
+import joanPx from "./assets/joan/joanDef.gif";
+import javiPx from "./assets/javi/javiDef.gif";
+import armandoFoto from "./assets/armando/foto-armando.png";
+import cristobalFoto from "./assets/cristobal/foto-cristobal.png";
+import javiFoto from "./assets/javi/foto-javi.png";
+import alejandroFoto from "./assets/alejandro/foto-alejandro.png";
+import julianFoto from "./assets/julian/foto-julian.png";
+import joanFoto from "./assets/joan/foto-joan.png";
+import alvaroFoto from "./assets/alvaro/foto-alvaro.png";
 import "./App.css";
 
 const App = () => {
@@ -71,7 +71,7 @@ const App = () => {
         if (type === "picture") {
           return julianFoto;
         } else if (type === "text") {
-          return "Que ni mil fiestas, ni mil rabos nos separen, guarrilla mía";
+          return "Que alegría el haberte conocido, sin haberme comido, una polla por el camino";
         } else {
           return julianPx;
         }

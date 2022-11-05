@@ -55,7 +55,7 @@ const App = () => {
         if (type === "picture") {
           return joanFoto;
         } else if (type === "text") {
-          return "Ni todas las cervezas del mundo saben mejor que pasar una noche a tu lado";
+          return "Mi niño boniiiitoooo. La siguiente no me la pierdo, te quiero un montón";
         } else {
           return joanPx;
         }
